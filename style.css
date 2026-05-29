@@ -152,6 +152,13 @@ button {
   gap: 18px;
 }
 
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex: 0 0 auto;
+}
+
 .nav-links {
   display: flex;
   align-items: center;
@@ -1372,10 +1379,6 @@ body.light-mode .contact-form textarea {
     width: 100%;
   }
 
-  .theme-toggle {
-    justify-self: start;
-  }
-
   .hero-grid,
   .contact-grid {
     grid-template-columns: 1fr;
@@ -1408,7 +1411,7 @@ body.light-mode .contact-form textarea {
 
   .navbar {
     height: 68px;
-    gap: 10px;
+    gap: 8px;
   }
 
   .nav-panel {
@@ -1422,16 +1425,25 @@ body.light-mode .contact-form textarea {
   }
 
   .logo {
-    font-size: 0.97rem;
+    font-size: 0.9rem;
     min-width: 0;
     overflow: hidden;
     text-overflow: ellipsis;
   }
 
+  .nav-actions {
+    gap: 6px;
+  }
+
+  .theme-toggle,
   .menu-toggle {
-    width: 52px;
-    height: 52px;
-    border-radius: 14px;
+    width: 46px;
+    height: 46px;
+    border-radius: 13px;
+  }
+
+  .menu-toggle {
+    display: grid;
     gap: 6px;
   }
 
