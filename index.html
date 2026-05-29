@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Personal portfolio website of Michael Mar L. Uba, BSIT student, web developer, and system developer." />
+  <title>Michael Mar L. Uba | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Decorative background elements -->
+  <div class="page-glow page-glow-one"></div>
+  <div class="page-glow page-glow-two"></div>
+
+  <!-- Header and Navigation -->
+  <header class="site-header" id="siteHeader">
+    <nav class="navbar container">
+      <a href="#home" class="logo" aria-label="Go to home section">
+        Michael Mar L. <span>Uba</span>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Open navigation menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <div class="nav-panel" id="navPanel">
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#achievements" class="nav-link">Achievements</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+
+        <button class="theme-toggle" id="themeToggle" aria-label="Switch theme" title="Switch theme">
+          <span id="themeIcon">☾</span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="hero section" id="home">
+      <div class="hero-pattern pattern-one"></div>
+      <div class="hero-pattern pattern-two"></div>
+      <div class="hero-curve"></div>
+
+      <div class="container hero-grid">
+        <div class="hero-content reveal">
+          <p class="eyebrow">Hello, I’m</p>
+          <h1>
+            <span class="name-main">Michael Mar</span>
+            <span class="name-accent">L. Uba</span>
+          </h1>
+          <h2>BSIT Student | Web Developer | System Developer</h2>
+          <p class="hero-description">
+            I am a BSIT student passionate about building functional, user friendly, and visually appealing web and mobile systems. I focus on web development, database integration, system design, and practical software solutions.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">View Projects</a>
+            <a href="#contact" class="btn btn-outline">Contact Me</a>
+          </div>
+
+          <div class="social-links" aria-label="Social media links">
+            <a href="#" aria-label="GitHub profile" title="GitHub">
+              <svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M12 2C6.48 2 2 6.58 2 12.26c0 4.52 2.87 8.36 6.84 9.72.5.1.68-.22.68-.49 0-.24-.01-1.05-.01-1.9-2.78.62-3.37-1.22-3.37-1.22-.45-1.19-1.11-1.5-1.11-1.5-.91-.64.07-.63.07-.63 1 .07 1.53 1.06 1.53 1.06.9 1.57 2.36 1.12 2.93.85.09-.67.35-1.12.63-1.38-2.22-.26-4.55-1.14-4.55-5.06 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.7 0 0 .84-.28 2.75 1.05A9.3 9.3 0 0 1 12 6.99c.85 0 1.7.12 2.5.34 1.9-1.33 2.74-1.05 2.74-1.05.55 1.4.2 2.44.1 2.7.64.72 1.03 1.63 1.03 2.75 0 3.93-2.34 4.79-4.57 5.05.36.32.68.94.68 1.9 0 1.38-.01 2.49-.01 2.82 0 .27.18.59.69.49A10.1 10.1 0 0 0 22 12.26C22 6.58 17.52 2 12 2Z" />
+              </svg>
+            </a>
+            <a href="https://www.instagram.com/mchlmaaar/" target="_blank" rel="noopener" aria-label="Instagram profile" title="Instagram">
+              <svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M7.8 2h8.4A5.8 5.8 0 0 1 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8A5.8 5.8 0 0 1 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2Zm0 2A3.8 3.8 0 0 0 4 7.8v8.4A3.8 3.8 0 0 0 7.8 20h8.4a3.8 3.8 0 0 0 3.8-3.8V7.8A3.8 3.8 0 0 0 16.2 4H7.8Zm4.2 3.2A4.8 4.8 0 1 1 7.2 12 4.8 4.8 0 0 1 12 7.2Zm0 2A2.8 2.8 0 1 0 14.8 12 2.8 2.8 0 0 0 12 9.2Zm5.05-2.45a1.15 1.15 0 1 1-1.15 1.15 1.15 1.15 0 0 1 1.15-1.15Z" />
+              </svg>
+            </a>
+            <a href="https://www.facebook.com/michael.lumiles.9" target="_blank" rel="noopener" aria-label="Facebook profile" title="Facebook">
+              <svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M14 8.4V6.7c0-.82.18-1.22 1.36-1.22H17V2.2A20.02 20.02 0 0 0 14.1 2c-2.88 0-4.85 1.76-4.85 5v1.4H6v3.68h3.25V22h3.98v-9.92h3.24L17 8.4h-3Z" />
+              </svg>
+            </a>
+            <a href="mailto:michaelmar1234567890@gmail.com" aria-label="Send email" title="Email">@</a>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal">
+          <div class="visual-dots"></div>
+          <div class="orbit orbit-one"></div>
+          <div class="orbit orbit-two"></div>
+          <div class="profile-ring">
+            <img src="assets/profile.png" alt="Profile image of Michael Mar L. Uba" />
+          </div>
+          <div class="floating-card floating-card-one">Web Dev</div>
+          <div class="floating-card floating-card-two">System Design</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about" id="about">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="section-label">About Me</p>
+          <h2>Building practical systems with clean design.</h2>
+          <p>
+            I am a BSIT student who is continuously learning and improving in web development, mobile application development, database management, and system design. I enjoy creating systems that solve real problems and improve user experience. This portfolio showcases my school projects, assignments, mini projects, and capstone related work.
+          </p>
+        </div>
+
+        <div class="info-grid reveal">
+          <article class="info-card">
+            <span>Course</span>
+            <strong>BSIT</strong>
+          </article>
+          <article class="info-card">
+            <span>Focus</span>
+            <strong>Web and Mobile Development</strong>
+          </article>
+          <article class="info-card">
+            <span>Tools</span>
+            <strong>Visual Studio Code, GitHub, Vercel</strong>
+          </article>
+          <article class="info-card">
+            <span>Location</span>
+            <strong>Cagayan de Oro City, Philippines</strong>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section skills" id="skills">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="section-label">Skills</p>
+          <h2>Technical skills and development tools.</h2>
+          <p>These are the core technologies and platforms I use for building school projects, web systems, mobile applications, and portfolio work.</p>
+        </div>
+
+        <div class="skills-grid reveal">
+          <article class="skill-card">
+            <h3>Frontend Skills</h3>
+            <div class="badge-group">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+              <span>Responsive Design</span>
+            </div>
+          </article>
+
+          <article class="skill-card">
+            <h3>Backend and Database</h3>
+            <div class="badge-group">
+              <span>Laravel</span>
+              <span>Node.js</span>
+              <span>MySQL</span>
+            </div>
+          </article>
+
+          <article class="skill-card">
+            <h3>Tools and Platforms</h3>
+            <div class="badge-group">
+              <span>GitHub</span>
+              <span>Vercel</span>
+              <span>Visual Studio Code</span>
+              <span>Expo</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section projects" id="projects">
+      <div class="container">
+        <div class="projects-heading reveal">
+          <p class="section-label">My Work</p>
+          <h2>Featured Projects</h2>
+          <p>Real systems built to solve real problems - not just school activities.</p>
+        </div>
+
+        <div class="projects-grid">
+          <article class="project-card reveal">
+            <div class="project-number">01</div>
+            <div class="project-image permit-preview" aria-label="Business Permit System screenshot">
+              <img src="assets/business_permit.png" alt="Barangay Business Permit and Licensing System interface" onerror="this.style.display='none'" />
+            </div>
+            <div class="project-body">
+              <div class="tech-list">
+                <span>PHP</span>
+                <span>Laravel</span>
+                <span>MySQL</span>
+                <span>Blade</span>
+              </div>
+              <h3>Business Permit System</h3>
+              <p>
+                A web-based licensing platform that streamlines business registration, permit applications, status tracking, and payment management for local government use cases.
+              </p>
+              <ul class="feature-list">
+                <li>Resident &amp; Business Registration</li>
+                <li>Permit Application Workflow</li>
+                <li>Real-time Application Tracking</li>
+                <li>Payment Management</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-number">02</div>
+            <div class="project-image clinic-preview" aria-label="Tunhay Grocery Store System screenshot">
+              <img src="assets/grocery_strore.png" alt="Tunhay Grocery Store customer login interface" onerror="this.style.display='none'" />
+            </div>
+            <div class="project-body">
+              <div class="tech-list">
+                <span>Laravel</span>
+                <span>MySQL</span>
+                <span>HTML</span>
+                <span>CSS</span>
+              </div>
+              <h3>Tunhay Grocery Store System</h3>
+              <p>
+                A grocery management system for products, inventory, sales, customers, transaction records, and basic reports for everyday store operations.
+              </p>
+              <ul class="feature-list">
+                <li>Product &amp; Stock Management</li>
+                <li>Customer Account Access</li>
+                <li>Sales Transaction Records</li>
+                <li>Store Reports</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-number">03</div>
+            <div class="project-image mobile-preview" aria-label="CineBai mobile app screenshot">
+              <img src="assets/movie_ticketing.png" alt="CineBai cinema ticketing mobile app interface" onerror="this.style.display='none'" />
+            </div>
+            <div class="project-body">
+              <div class="tech-list">
+                <span>React Native</span>
+                <span>Node.js</span>
+                <span>Laravel</span>
+                <span>MySql</span>
+              </div>
+              <h3>CineBai - Cinema Ticketing App</h3>
+              <p>
+                A mobile-first cinema ticketing system that lets users browse movies, select seats, manage bookings, process payments, and enter cinemas using QR code scanning.
+              </p>
+              <ul class="feature-list">
+                <li>Movie Browsing &amp; Details</li>
+                <li>Interactive Seat Booking</li>
+                <li>Payment Submission</li>
+                <li>QR Entry Confirmation</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section projects projects-legacy" id="projects-old" aria-hidden="true">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="section-label">Projects</p>
+          <h2>Featured work and system projects.</h2>
+          <p>Each project focuses on practical system features, organized user flow, responsive layouts, and clean presentation.</p>
+        </div>
+
+        <div class="projects-grid">
+          <article class="project-card featured reveal">
+            <div class="project-topline">
+              <span class="featured-badge">Featured Project</span>
+              <span class="project-icon">🎟</span>
+            </div>
+            <h3>CineBai Movie Ticketing System</h3>
+            <p>
+              A mobile movie ticketing system that allows users to browse movies, view movie details, check schedules, select available seats, book tickets, submit payments, and receive digital ticket confirmation. The system also includes admin or staff management for movies, schedules, cinema halls, seats, bookings, and payment verification.
+            </p>
+            <div class="tech-list">
+              <span>React Native</span>
+              <span>Laravel</span>
+              <span>MySQL</span>
+              <span>JavaScript</span>
+              <span>GitHub</span>
+              <span>Visual Studio Code</span>
+            </div>
+            <ul class="feature-list">
+              <li>Browse available movies</li>
+              <li>View movie details and schedules</li>
+              <li>Select available seats and book tickets</li>
+              <li>Submit payment details</li>
+              <li>Admin payment verification</li>
+              <li>Manage movies, schedules, seats, bookings, and payments</li>
+              <li>Receive digital ticket confirmation</li>
+            </ul>
+            <div class="project-actions">
+              <a href="#" class="small-btn">View Project</a>
+              <a href="#" class="small-btn ghost">Source Code</a>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-topline">
+              <span class="project-tag">Inventory System</span>
+              <span class="project-icon">🛒</span>
+            </div>
+            <h3>Tunhay Grocery Store System</h3>
+            <p>
+              A grocery store management system designed to help manage store products, inventory, sales, customers, and basic transaction records. The system helps organize grocery store operations by allowing staff to monitor available products, update stock information, manage item details, and track sales records.
+            </p>
+            <div class="tech-list">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+              <span>PHP or Laravel</span>
+              <span>MySQL</span>
+            </div>
+            <ul class="feature-list">
+              <li>Manage grocery products</li>
+              <li>Add, update, and delete product records</li>
+              <li>Monitor product stocks</li>
+              <li>Record sales transactions</li>
+              <li>Manage customer or buyer information</li>
+              <li>View product and sales records</li>
+              <li>Generate basic store reports</li>
+            </ul>
+            <div class="project-actions">
+              <a href="#" class="small-btn">View Project</a>
+              <a href="#" class="small-btn ghost">Source Code</a>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-topline">
+              <span class="project-tag">Permit System</span>
+              <span class="project-icon">📄</span>
+            </div>
+            <h3>Business Permit System</h3>
+            <p>
+              A business permit system designed to help users process and manage business permit applications in a more organized and efficient way. The system allows applicants to submit business information, provide required details, track application status, and allows admin staff to review, verify, approve, or reject permit applications.
+            </p>
+            <div class="tech-list">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+              <span>PHP or Laravel</span>
+              <span>MySQL</span>
+            </div>
+            <ul class="feature-list">
+              <li>Submit business permit applications</li>
+              <li>Manage applicant information</li>
+              <li>Record business details</li>
+              <li>Review submitted applications</li>
+              <li>Update application status</li>
+              <li>Approve or reject permit requests</li>
+              <li>Manage permit records</li>
+              <li>Generate basic permit reports</li>
+            </ul>
+            <div class="project-actions">
+              <a href="#" class="small-btn">View Project</a>
+              <a href="#" class="small-btn ghost">Source Code</a>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-topline">
+              <span class="project-tag">Portfolio</span>
+              <span class="project-icon">💻</span>
+            </div>
+            <h3>Portfolio Website</h3>
+            <p>
+              A personal portfolio website built using HTML, CSS, and JavaScript to showcase skills, projects, achievements, certificates, and contact details.
+            </p>
+            <div class="tech-list">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+              <span>GitHub</span>
+              <span>Vercel</span>
+            </div>
+            <ul class="feature-list">
+              <li>One page responsive layout</li>
+              <li>Smooth scrolling navigation</li>
+              <li>Project showcase section</li>
+              <li>Skills section</li>
+              <li>Achievements and certificates section</li>
+              <li>Contact form design</li>
+              <li>Back to top button</li>
+              <li>Mobile friendly navigation</li>
+            </ul>
+            <div class="project-actions">
+              <a href="#" class="small-btn">View Project</a>
+              <a href="#" class="small-btn ghost">Source Code</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section achievements" id="achievements">
+      <div class="container">
+        <div class="certificate-heading reveal">
+          <p class="section-label">Achievements</p>
+          <h2>Certifications</h2>
+          <p>Verified credentials that back up my technical knowledge.</p>
+        </div>
+
+        <article class="certification-card reveal">
+          <div class="certification-brand">
+            <span class="brand-name">Oracle</span>
+            <span class="brand-subtitle">Academy</span>
+            <div class="certificate-orb" aria-label="Java">
+              <svg class="java-logo" viewBox="0 0 64 64" aria-hidden="true">
+                <path d="M35.1 7.2c3.2 3.5-8.4 7.3-2.7 12.1 1.7 1.4 1.4 3.1-.2 5.1 4.3-3.1 6.2-5.8 3.5-8.5-2.5-2.5 5.8-5.2-.6-8.7Z" />
+                <path d="M27.4 15.6c2.6 3-6.8 6.1-2.1 10.2 1.3 1.2 1.2 2.5-.2 4.2 3.6-2.6 5.2-4.8 2.9-7.1-2-2.1 4.8-4.3-.6-7.3Z" />
+                <path d="M20.1 35.3c7.7 2.7 21.2 2 25.7-.9 1.2-.8.8-1.7-.7-1.5-6.4.9-17 1.1-23-.2-2.9-.6-4.2 1.8-2 2.6Z" />
+                <path d="M18 42.2c8.9 3.2 24.6 2.6 30.2-.9 1.5-1 .9-2-.8-1.7-7.9 1.3-20 1.5-27.2 0-3.1-.6-4.9 1.7-2.2 2.6Z" />
+                <path d="M22.2 49.5c7.6 2.1 19.6 1.8 25.3-1.5 1.4-.8.9-1.9-.8-1.6-6.2 1.1-15.8 1.4-22.4.3-3.3-.6-4.8 2-2.1 2.8Z" />
+                <path d="M50.4 32.7c4.2 2.5 1.6 9.5-5.2 12.8 9.8-2 13.2-10.6 5.2-12.8Z" />
+              </svg>
+              <span>Java</span>
+            </div>
+            <span class="course-chip">Course Completion</span>
+          </div>
+
+          <div class="certification-details">
+            <p class="certification-kicker">Award of Course Completion</p>
+            <h3>Java Fundamentals</h3>
+            <p class="certification-meta">Presented to Michael Mar L. Uba</p>
+            <p>
+              Awarded for completing Java Fundamentals and demonstrating foundational programming knowledge including object-oriented concepts, basic syntax, and practical Java problem solving.
+            </p>
+            <a href="assets/certificate.pdf" class="small-btn" target="_blank" rel="noopener">View Certificate</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact" id="contact">
+      <div class="container contact-grid">
+        <div class="contact-info reveal">
+          <p class="section-label">Contact</p>
+          <h2>Let’s connect and build something useful.</h2>
+          <p>
+            Feel free to reach out for project collaboration, school project discussions, or portfolio inquiries.
+          </p>
+
+          <div class="contact-list">
+            <div class="contact-item">
+              <span class="contact-icon">@</span>
+              <span>Email</span>
+              <a href="mailto:michaelmar1234567890@gmail.com">michaelmar1234567890@gmail.com</a>
+            </div>
+            <div class="contact-item">
+              <span class="contact-icon">
+                <svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M12 2C6.48 2 2 6.58 2 12.26c0 4.52 2.87 8.36 6.84 9.72.5.1.68-.22.68-.49 0-.24-.01-1.05-.01-1.9-2.78.62-3.37-1.22-3.37-1.22-.45-1.19-1.11-1.5-1.11-1.5-.91-.64.07-.63.07-.63 1 .07 1.53 1.06 1.53 1.06.9 1.57 2.36 1.12 2.93.85.09-.67.35-1.12.63-1.38-2.22-.26-4.55-1.14-4.55-5.06 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.7 0 0 .84-.28 2.75 1.05A9.3 9.3 0 0 1 12 6.99c.85 0 1.7.12 2.5.34 1.9-1.33 2.74-1.05 2.74-1.05.55 1.4.2 2.44.1 2.7.64.72 1.03 1.63 1.03 2.75 0 3.93-2.34 4.79-4.57 5.05.36.32.68.94.68 1.9 0 1.38-.01 2.49-.01 2.82 0 .27.18.59.69.49A10.1 10.1 0 0 0 22 12.26C22 6.58 17.52 2 12 2Z" />
+                </svg>
+              </span>
+              <span>GitHub</span>
+              <a href="#"></a>
+            </div>
+            <div class="contact-item">
+              <span class="contact-icon">
+                <svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M7.8 2h8.4A5.8 5.8 0 0 1 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8A5.8 5.8 0 0 1 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2Zm0 2A3.8 3.8 0 0 0 4 7.8v8.4A3.8 3.8 0 0 0 7.8 20h8.4a3.8 3.8 0 0 0 3.8-3.8V7.8A3.8 3.8 0 0 0 16.2 4H7.8Zm4.2 3.2A4.8 4.8 0 1 1 7.2 12 4.8 4.8 0 0 1 12 7.2Zm0 2A2.8 2.8 0 1 0 14.8 12 2.8 2.8 0 0 0 12 9.2Zm5.05-2.45a1.15 1.15 0 1 1-1.15 1.15 1.15 1.15 0 0 1 1.15-1.15Z" />
+                </svg>
+              </span>
+              <span>Instagram</span>
+              <a href="https://www.instagram.com/mchlmaaar/" target="_blank" rel="noopener">instagram.com/mchlmaaar</a>
+            </div>
+            <div class="contact-item">
+              <span class="contact-icon">
+                <svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M14 8.4V6.7c0-.82.18-1.22 1.36-1.22H17V2.2A20.02 20.02 0 0 0 14.1 2c-2.88 0-4.85 1.76-4.85 5v1.4H6v3.68h3.25V22h3.98v-9.92h3.24L17 8.4h-3Z" />
+                </svg>
+              </span>
+              <span>Facebook</span>
+              <a href="https://www.facebook.com/michael.lumiles.9" target="_blank" rel="noopener">facebook.com/michael.lumiles.9</a>
+            </div>
+            <div class="contact-item">
+              <span class="contact-icon">•</span>
+              <span>Location</span>
+              <p>Cagayan de Oro City, Philippines</p>
+            </div>
+          </div>
+        </div>
+
+        <form class="contact-form reveal" id="contactForm">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Enter your name" required />
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="Enter your email" required />
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="6" placeholder="Write your message" required></textarea>
+
+          <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>© 2026 Michael Mar Uba. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
