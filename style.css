@@ -46,6 +46,7 @@ body.light-mode {
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 90px;
+  overflow-x: hidden;
 }
 
 body {
@@ -86,6 +87,7 @@ button {
 .container {
   width: min(1120px, calc(100% - 40px));
   margin: 0 auto;
+  min-width: 0;
 }
 
 .section {
@@ -527,6 +529,7 @@ button {
 .section-heading {
   max-width: 760px;
   margin-bottom: 38px;
+  min-width: 0;
 }
 
 .section-heading h2,
@@ -569,6 +572,7 @@ button {
 .project-card,
 .certificate-card,
 .contact-form {
+  min-width: 0;
   border: 1px solid var(--border);
   background: var(--card-bg);
   border-radius: var(--radius-lg);
@@ -627,6 +631,7 @@ button {
 
 .badge-group span,
 .tech-list span {
+  max-width: 100%;
   color: var(--text-main);
   background: rgba(14, 165, 255, 0.1);
   border: 1px solid var(--border);
@@ -634,6 +639,7 @@ button {
   padding: 8px 12px;
   font-size: 0.86rem;
   font-weight: 700;
+  overflow-wrap: anywhere;
   transition: box-shadow var(--transition), transform var(--transition), background var(--transition);
 }
 
@@ -1402,11 +1408,11 @@ body.light-mode .contact-form textarea {
 /* Mobile screens */
 @media (max-width: 680px) {
   .container {
-    width: min(calc(100% - 24px), 1120px);
+    width: min(calc(100% - 28px), 1120px);
   }
 
   .section {
-    padding: 82px 0;
+    padding: 72px 0;
   }
 
   .navbar {
@@ -1426,6 +1432,7 @@ body.light-mode .contact-form textarea {
 
   .logo {
     font-size: 0.9rem;
+    max-width: calc(100vw - 126px);
     min-width: 0;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -1462,7 +1469,7 @@ body.light-mode .contact-form textarea {
 
   .hero {
     min-height: auto;
-    padding: 70px 0 88px;
+    padding: 64px 0 78px;
   }
 
   .hero-grid {
@@ -1470,7 +1477,7 @@ body.light-mode .contact-form textarea {
   }
 
   .hero h1 {
-    font-size: clamp(2.65rem, 12vw, 3.85rem);
+    font-size: clamp(2.35rem, 11.5vw, 3.45rem);
     letter-spacing: -0.06em;
     overflow-wrap: anywhere;
   }
@@ -1479,7 +1486,32 @@ body.light-mode .contact-form textarea {
     max-width: 28rem;
     margin-left: auto;
     margin-right: auto;
-    font-size: clamp(0.96rem, 3.6vw, 1.18rem);
+    font-size: clamp(0.88rem, 3.5vw, 1.08rem);
+    overflow-wrap: anywhere;
+  }
+
+  .hero-description,
+  .section-heading p,
+  .projects-heading p,
+  .certificate-heading p,
+  .contact-info p {
+    font-size: 0.96rem;
+  }
+
+  .section-heading,
+  .projects-heading,
+  .certificate-heading {
+    margin-bottom: 30px;
+  }
+
+  .section-heading h2,
+  .contact-info h2,
+  .projects-heading h2,
+  .certificate-heading h2 {
+    font-size: clamp(1.75rem, 8.5vw, 2.35rem);
+    line-height: 1.14;
+    letter-spacing: -0.035em;
+    text-shadow: none;
     overflow-wrap: anywhere;
   }
 
@@ -1522,6 +1554,31 @@ body.light-mode .contact-form textarea {
   .projects-grid,
   .certificate-grid {
     grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .info-card,
+  .skill-card,
+  .contact-form {
+    padding: 22px;
+    border-radius: 22px;
+  }
+
+  .skill-card h3,
+  .project-card h3,
+  .certificate-card h3 {
+    font-size: 1.16rem;
+  }
+
+  .badge-group,
+  .tech-list {
+    gap: 8px;
+  }
+
+  .badge-group span,
+  .tech-list span {
+    padding: 7px 10px;
+    font-size: 0.8rem;
   }
 
   .project-card.featured {
@@ -1532,24 +1589,56 @@ body.light-mode .contact-form textarea {
     grid-template-columns: 1fr;
   }
 
-  .contact-form {
-    padding: 22px;
-  }
-
   .back-to-top {
     right: 16px;
     bottom: 16px;
+    width: 42px;
+    height: 42px;
   }
 }
 
 @media (max-width: 420px) {
+  .container {
+    width: min(calc(100% - 22px), 1120px);
+  }
+
+  .navbar {
+    height: 64px;
+  }
+
+  .nav-panel {
+    top: 64px;
+    left: 11px;
+    right: 11px;
+  }
+
+  .logo {
+    max-width: calc(100vw - 112px);
+    font-size: 0.82rem;
+  }
+
+  .nav-actions {
+    gap: 5px;
+  }
+
+  .theme-toggle,
+  .menu-toggle {
+    width: 42px;
+    height: 42px;
+    border-radius: 12px;
+  }
+
+  .menu-toggle span {
+    width: 22px;
+  }
+
   .hero h1 {
     letter-spacing: -0.07em;
   }
 
   .section-heading h2,
   .contact-info h2 {
-    font-size: 2rem;
+    font-size: 1.85rem;
   }
 }
 
@@ -1570,15 +1659,20 @@ body.light-mode .contact-form textarea {
 
 @media (max-width: 680px) {
   .projects-heading {
-    margin-bottom: 34px;
+    margin-bottom: 30px;
   }
 
   .projects .projects-grid {
     grid-template-columns: 1fr;
+    gap: 18px;
   }
 
   .project-image {
-    height: 220px;
+    height: clamp(185px, 56vw, 220px);
+  }
+
+  .project-body {
+    padding: 20px;
   }
 
   .projects .feature-list {
@@ -1586,11 +1680,12 @@ body.light-mode .contact-form textarea {
   }
 
   .certificate-heading {
-    margin-bottom: 34px;
+    margin-bottom: 30px;
   }
 
   .certification-card {
     grid-template-columns: 1fr;
+    border-radius: 22px;
   }
 
   .certification-brand {
@@ -1604,7 +1699,49 @@ body.light-mode .contact-form textarea {
     margin: 28px auto 22px;
   }
 
+  .certification-brand,
+  .certification-details {
+    padding: 26px 22px;
+  }
+
   .certification-details {
     text-align: left;
+  }
+}
+
+@media (max-width: 360px) {
+  .container {
+    width: min(calc(100% - 18px), 1120px);
+  }
+
+  .logo {
+    max-width: calc(100vw - 104px);
+    font-size: 0.76rem;
+  }
+
+  .theme-toggle,
+  .menu-toggle {
+    width: 39px;
+    height: 39px;
+  }
+
+  .hero h1 {
+    font-size: 2.15rem;
+  }
+
+  .section-heading h2,
+  .contact-info h2,
+  .projects-heading h2,
+  .certificate-heading h2 {
+    font-size: 1.65rem;
+  }
+
+  .info-card,
+  .skill-card,
+  .contact-form,
+  .project-body,
+  .certification-brand,
+  .certification-details {
+    padding: 18px;
   }
 }
